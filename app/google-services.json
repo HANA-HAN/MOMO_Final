@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1053773566249",
+    "firebase_url": "https://momo-final-default-rtdb.firebaseio.com",
+    "project_id": "momo-final",
+    "storage_bucket": "momo-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053773566249:android:94c1ddb5c5304049246738",
+        "android_client_info": {
+          "package_name": "com.example.momo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053773566249-65c8qb8on59nmffiri9a8jnbpd4n5jma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiYDvaisDgCDeVapiQACBLAoJVqxT-TXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053773566249-65c8qb8on59nmffiri9a8jnbpd4n5jma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
