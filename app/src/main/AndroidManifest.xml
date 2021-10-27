@@ -12,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MOMO">
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
         <activity
             android:name=".ActivityStartapp"
             android:exported="true">
@@ -22,8 +25,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" android:label="MainActivity"/>
-        <activity android:name=".CustomerAuthActivity" android:label="CustomerAuthActivity"/>
+        <activity android:name=".CustomerAuthActivity" android:label="간편 로그인"/>
         <activity android:name=".FirebaseActivity" android:label="FirebaseActivity"/>
+        <activity android:name=".InterestActivity" android:label="InterestActivity"/>
+        <activity android:name=".ProfileActivity" android:label="ProfileActivity"/>
     </application>
 
 </manifest>
