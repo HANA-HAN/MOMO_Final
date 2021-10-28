@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_logout:
                 Toast t1 = Toast.makeText(this, "로그아웃", Toast.LENGTH_SHORT);
                 t1.show();
-//                Intent f = new Intent(MainActivity.this, MainActivity.class); //임시
+//                Intent f = new Intent(MainActivity.this, CustomerAuthActivity.class);
 //                startActivity(f);
                 break;
             case R.id.action_withdrawal:

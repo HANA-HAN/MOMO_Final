@@ -149,6 +149,24 @@ public class ProfileActivity extends AppCompatActivity {
             case "프로그래밍":
                 selected_interest_image.setImageResource(R.drawable.icon_programming);
                 break;
+            case "가구":
+                selected_interest_image.setImageResource(R.drawable.icon_furniture);
+                break;
+            case "문신":
+                selected_interest_image.setImageResource(R.drawable.icon_tattoo);
+                break;
+            case "연예인":
+                selected_interest_image.setImageResource(R.drawable.icon_celebrity);
+                break;
+            case "골프":
+                selected_interest_image.setImageResource(R.drawable.icon_golf);
+                break;
+            case "향수":
+                selected_interest_image.setImageResource(R.drawable.icon_perfume);
+                break;
+            case "스타일링":
+                selected_interest_image.setImageResource(R.drawable.icon_styling);
+                break;
         }
 
         nextBtn2main = (Button)findViewById(R.id.nextBtn2main);

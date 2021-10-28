@@ -38,6 +38,7 @@
         <activity android:name=".UsedtradeActivity" android:label="UsedtradeActivity"/>
         <activity android:name=".IteminfoActivity" android:label="IteminfoActivity"/>
         <activity android:name=".ItemregisterActivity" android:label="ItemregisterActivity"/>
+        <activity android:name=".WithdrawalActivity" android:label="WithdrawalActivity"/>
     </application>
 
 </manifest>

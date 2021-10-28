@@ -89,19 +89,19 @@ public class InterestActivity extends AppCompatActivity {
                                 interest_1Btn.setBackgroundColor(Color.WHITE);
                                 interest_2Btn.setBackgroundColor(Color.WHITE);
                                 interest_3Btn.setBackgroundColor(Color.rgb(79, 39, 96));
-                                interest_img_1_1.setBackgroundResource(R.drawable.icon_boardgame);
-                                interest_img_1_2.setBackgroundResource(R.drawable.icon_car);
-                                interest_img_1_3.setBackgroundResource(R.drawable.icon_cafe);
-                                interest_img_2_1.setBackgroundResource(R.drawable.icon_drawing);
-                                interest_img_2_2.setBackgroundResource(R.drawable.icon_soccer);
-                                interest_img_2_3.setBackgroundResource(R.drawable.icon_movie);
+                                interest_img_1_1.setBackgroundResource(R.drawable.icon_pet);
+                                interest_img_1_2.setBackgroundResource(R.drawable.icon_surfing);
+                                interest_img_1_3.setBackgroundResource(R.drawable.icon_fishing);
+                                interest_img_2_1.setBackgroundResource(R.drawable.icon_stock);
+                                interest_img_2_2.setBackgroundResource(R.drawable.icon_tv);
+                                interest_img_2_3.setBackgroundResource(R.drawable.icon_vocal);
 
-                                interest_text_1_1.setText("보드게임");
-                                interest_text_1_2.setText("자동차");
-                                interest_text_1_3.setText("카페");
-                                interest_text_2_1.setText("드로잉");
-                                interest_text_2_2.setText("축구");
-                                interest_text_2_3.setText("영화");
+                                interest_text_1_1.setText("반려동물");
+                                interest_text_1_2.setText("서핑");
+                                interest_text_1_3.setText("낚시");
+                                interest_text_2_1.setText("주식");
+                                interest_text_2_2.setText("TV");
+                                interest_text_2_3.setText("보컬");
                                 break;
                             case "1":
                                 interest_1Btn.setText("1");
@@ -118,34 +118,34 @@ public class InterestActivity extends AppCompatActivity {
                         interest_3Btn.setBackgroundColor(Color.WHITE);
                         switch (interest_1Btn.getText().toString()){
                             case "1":
-                                interest_img_1_1.setBackgroundResource(R.drawable.icon_camera);
-                                interest_img_1_2.setBackgroundResource(R.drawable.icon_fashion);
-                                interest_img_1_3.setBackgroundResource(R.drawable.icon_makeup);
-                                interest_img_2_1.setBackgroundResource(R.drawable.icon_dance);
-                                interest_img_2_2.setBackgroundResource(R.drawable.icon_food);
-                                interest_img_2_3.setBackgroundResource(R.drawable.icon_travel);
+                                interest_img_1_1.setBackgroundResource(R.drawable.icon_health);
+                                interest_img_1_2.setBackgroundResource(R.drawable.icon_game);
+                                interest_img_1_3.setBackgroundResource(R.drawable.icon_music);
+                                interest_img_2_1.setBackgroundResource(R.drawable.icon_drink);
+                                interest_img_2_2.setBackgroundResource(R.drawable.icon_camp);
+                                interest_img_2_3.setBackgroundResource(R.drawable.icon_book);
 
-                                interest_text_1_1.setText("사진/영상");
-                                interest_text_1_2.setText("패션");
-                                interest_text_1_3.setText("메이크업");
-                                interest_text_2_1.setText("댄스");
-                                interest_text_2_2.setText("요리");
-                                interest_text_2_3.setText("여행");
+                                interest_text_1_1.setText("헬스");
+                                interest_text_1_2.setText("게임");
+                                interest_text_1_3.setText("음악");
+                                interest_text_2_1.setText("음주");
+                                interest_text_2_2.setText("캠핑");
+                                interest_text_2_3.setText("책");
                                 break;
                             case "4":
-                                interest_img_1_1.setBackgroundResource(R.drawable.icon_pet);
-                                interest_img_1_2.setBackgroundResource(R.drawable.icon_surfing);
-                                interest_img_1_3.setBackgroundResource(R.drawable.icon_fishing);
-                                interest_img_2_1.setBackgroundResource(R.drawable.icon_stock);
-                                interest_img_2_2.setBackgroundResource(R.drawable.icon_tv);
-                                interest_img_2_3.setBackgroundResource(R.drawable.icon_vocal);
+                                interest_img_1_1.setBackgroundResource(R.drawable.icon_makeup);
+                                interest_img_1_2.setBackgroundResource(R.drawable.icon_travel);
+                                interest_img_1_3.setBackgroundResource(R.drawable.icon_camera);
+                                interest_img_2_1.setBackgroundResource(R.drawable.icon_food);
+                                interest_img_2_2.setBackgroundResource(R.drawable.icon_fashion);
+                                interest_img_2_3.setBackgroundResource(R.drawable.icon_dance);
 
-                                interest_text_1_1.setText("반려동물");
-                                interest_text_1_2.setText("서핑");
-                                interest_text_1_3.setText("낚시");
-                                interest_text_2_1.setText("주식");
-                                interest_text_2_2.setText("TV");
-                                interest_text_2_3.setText("보컬");
+                                interest_text_1_1.setText("메이크업");
+                                interest_text_1_2.setText("여행");
+                                interest_text_1_3.setText("사진/영상");
+                                interest_text_2_1.setText("요리");
+                                interest_text_2_2.setText("패션");
+                                interest_text_2_3.setText("댄스");
                                 break;
                         }
                         break;
@@ -158,19 +158,19 @@ public class InterestActivity extends AppCompatActivity {
 
                         switch (interest_2Btn.getText().toString()){
                             case "2":
-                                interest_img_1_1.setBackgroundResource(R.drawable.icon_health);
-                                interest_img_1_2.setBackgroundResource(R.drawable.icon_camp);
-                                interest_img_1_3.setBackgroundResource(R.drawable.icon_game);
-                                interest_img_2_1.setBackgroundResource(R.drawable.icon_book);
-                                interest_img_2_2.setBackgroundResource(R.drawable.icon_music);
-                                interest_img_2_3.setBackgroundResource(R.drawable.icon_drink);
+                                interest_img_1_1.setBackgroundResource(R.drawable.icon_boardgame);
+                                interest_img_1_2.setBackgroundResource(R.drawable.icon_car);
+                                interest_img_1_3.setBackgroundResource(R.drawable.icon_cafe);
+                                interest_img_2_1.setBackgroundResource(R.drawable.icon_drawing);
+                                interest_img_2_2.setBackgroundResource(R.drawable.icon_soccer);
+                                interest_img_2_3.setBackgroundResource(R.drawable.icon_movie);
 
-                                interest_text_1_1.setText("헬스");
-                                interest_text_1_2.setText("캠핑");
-                                interest_text_1_3.setText("게임");
-                                interest_text_2_1.setText("책");
-                                interest_text_2_2.setText("음악");
-                                interest_text_2_3.setText("음주");
+                                interest_text_1_1.setText("보드게임");
+                                interest_text_1_2.setText("자동차");
+                                interest_text_1_3.setText("카페");
+                                interest_text_2_1.setText("드로잉");
+                                interest_text_2_2.setText("축구");
+                                interest_text_2_3.setText("영화");
                                 break;
                             case "5":
                                 interest_img_1_1.setBackgroundResource(R.drawable.icon_bitcoin);
@@ -198,21 +198,6 @@ public class InterestActivity extends AppCompatActivity {
 
                         switch (interest_3Btn.getText().toString()){
                             case "3":
-                                interest_img_1_1.setBackgroundResource(R.drawable.icon_boardgame);
-                                interest_img_1_2.setBackgroundResource(R.drawable.icon_car);
-                                interest_img_1_3.setBackgroundResource(R.drawable.icon_cafe);
-                                interest_img_2_1.setBackgroundResource(R.drawable.icon_drawing);
-                                interest_img_2_2.setBackgroundResource(R.drawable.icon_soccer);
-                                interest_img_2_3.setBackgroundResource(R.drawable.icon_movie);
-
-                                interest_text_1_1.setText("보드게임");
-                                interest_text_1_2.setText("자동차");
-                                interest_text_1_3.setText("카페");
-                                interest_text_2_1.setText("드로잉");
-                                interest_text_2_2.setText("축구");
-                                interest_text_2_3.setText("영화");
-                                break;
-                            case "6":
                                 interest_img_1_1.setBackgroundResource(R.drawable.icon_pet);
                                 interest_img_1_2.setBackgroundResource(R.drawable.icon_surfing);
                                 interest_img_1_3.setBackgroundResource(R.drawable.icon_fishing);
@@ -226,6 +211,21 @@ public class InterestActivity extends AppCompatActivity {
                                 interest_text_2_1.setText("주식");
                                 interest_text_2_2.setText("TV");
                                 interest_text_2_3.setText("보컬");
+                                break;
+                            case "6":
+                                interest_img_1_1.setBackgroundResource(R.drawable.icon_furniture);
+                                interest_img_1_2.setBackgroundResource(R.drawable.icon_tattoo);
+                                interest_img_1_3.setBackgroundResource(R.drawable.icon_celebrity);
+                                interest_img_2_1.setBackgroundResource(R.drawable.icon_golf);
+                                interest_img_2_2.setBackgroundResource(R.drawable.icon_perfume);
+                                interest_img_2_3.setBackgroundResource(R.drawable.icon_styling);
+
+                                interest_text_1_1.setText("가구");
+                                interest_text_1_2.setText("문신");
+                                interest_text_1_3.setText("연예인");
+                                interest_text_2_1.setText("골프");
+                                interest_text_2_2.setText("향수");
+                                interest_text_2_3.setText("스타일링");
                                 break;
                         }
                         break;
@@ -240,19 +240,19 @@ public class InterestActivity extends AppCompatActivity {
                                 interest_1Btn.setBackgroundColor(Color.rgb(79, 39, 96));
                                 interest_2Btn.setBackgroundColor(Color.WHITE);
                                 interest_3Btn.setBackgroundColor(Color.WHITE);
-                                interest_img_1_1.setBackgroundResource(R.drawable.icon_pet);
-                                interest_img_1_2.setBackgroundResource(R.drawable.icon_surfing);
-                                interest_img_1_3.setBackgroundResource(R.drawable.icon_fishing);
-                                interest_img_2_1.setBackgroundResource(R.drawable.icon_stock);
-                                interest_img_2_2.setBackgroundResource(R.drawable.icon_tv);
-                                interest_img_2_3.setBackgroundResource(R.drawable.icon_vocal);
+                                interest_img_1_1.setBackgroundResource(R.drawable.icon_makeup);
+                                interest_img_1_2.setBackgroundResource(R.drawable.icon_travel);
+                                interest_img_1_3.setBackgroundResource(R.drawable.icon_camera);
+                                interest_img_2_1.setBackgroundResource(R.drawable.icon_food);
+                                interest_img_2_2.setBackgroundResource(R.drawable.icon_fashion);
+                                interest_img_2_3.setBackgroundResource(R.drawable.icon_dance);
 
-                                interest_text_1_1.setText("반려동물");
-                                interest_text_1_2.setText("서핑");
-                                interest_text_1_3.setText("낚시");
-                                interest_text_2_1.setText("주식");
-                                interest_text_2_2.setText("TV");
-                                interest_text_2_3.setText("보컬");
+                                interest_text_1_1.setText("메이크업");
+                                interest_text_1_2.setText("여행");
+                                interest_text_1_3.setText("사진/영상");
+                                interest_text_2_1.setText("요리");
+                                interest_text_2_2.setText("패션");
+                                interest_text_2_3.setText("댄스");
                                 break;
                             case "6":
                                 interest_1Btn.setText("4");
