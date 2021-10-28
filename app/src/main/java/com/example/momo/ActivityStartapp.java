@@ -24,7 +24,7 @@ public class ActivityStartapp extends AppCompatActivity {
             @Override
             public void run() {
                 // TODO Auto-generated method stub
-                Intent i = new Intent(ActivityStartapp.this, CustomerAuthActivity.class);
+                Intent i = new Intent(ActivityStartapp.this, InterestActivity.class);
                 startActivity(i);
                 finish();
             }
