@@ -81,6 +81,7 @@
                 android:textSize="15dp"
                 android:fontFamily="@font/elicedigitalnaeumbold"
                 android:background="@drawable/edge"
+                android:textColor="@color/black"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp">
             </TextView>
@@ -110,8 +111,9 @@
                 android:text="나이키 운동화에 관심이 있어요!"
                 android:gravity="center"
                 android:textSize="15dp"
-                android:fontFamily="@font/elicedigitalnaeumbold"
+                android:fontFamily="@font/elicedigitalbaeumregular"
                 android:background="@drawable/edge"
+                android:textColor="@color/black"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp">
             </TextView>

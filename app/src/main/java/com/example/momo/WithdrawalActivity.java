@@ -39,7 +39,7 @@ public class WithdrawalActivity extends AppCompatActivity {
                         t.show();
                         //Intent b = new Intent(WithdrawalActivity.this, CustomerAuthActivity.class);
                         //startActivity(b);
-                        Intent c = new Intent(WithdrawalActivity.this, MainActivity.class);
+                        Intent c = new Intent(WithdrawalActivity.this, MainActivity.class); //로그인창으로 가도록 바꿔야함
                         startActivity(c);
                         break;
                 }

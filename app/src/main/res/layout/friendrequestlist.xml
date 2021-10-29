@@ -93,7 +93,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
-                       android:text="조던마니아"
+                        android:text="조던마니아"
+                        android:textColor="@color/black"
                         android:gravity="center"
                         android:fontFamily="@font/elicedigitalnaeumbold" />
                 </LinearLayout>
@@ -105,6 +106,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="나이키 브랜드에 관심이 많아요.\n스타일러를 알아보고 있어요."
+                    android:textColor="@color/black"
                     android:fontFamily="@font/elicedigitalbaeumregular">
                 </TextView>
                 <LinearLayout
@@ -166,6 +168,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
                         android:text="이지"
+                        android:textColor="@color/black"
                         android:gravity="center"
                         android:fontFamily="@font/elicedigitalnaeumbold"/>
                 </LinearLayout>
@@ -177,6 +180,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="아디다스 운동화 수집중~"
+                    android:textColor="@color/black"
                     android:fontFamily="@font/elicedigitalbaeumregular">
                 </TextView>
                 <LinearLayout
@@ -238,6 +242,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
                         android:text="MakeM"
+                        android:textColor="@color/black"
                         android:gravity="center"
                         android:fontFamily="@font/elicedigitalnaeumbold"/>
                 </LinearLayout>
@@ -249,6 +254,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="쿨톤 메이크업에 관심이 많아요."
+                    android:textColor="@color/black"
                     android:fontFamily="@font/elicedigitalbaeumregular">
                 </TextView>
                 <LinearLayout
@@ -310,6 +316,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="2.5"
                         android:text="스트릿"
+                        android:textColor="@color/black"
                         android:gravity="center"
                         android:fontFamily="@font/elicedigitalnaeumbold"/>
                 </LinearLayout>
@@ -321,6 +328,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="같이 댄스 틱톡 찍으실 분 구해요"
+                    android:textColor="@color/black"
                     android:fontFamily="@font/elicedigitalbaeumregular">
                 </TextView>
                 <LinearLayout

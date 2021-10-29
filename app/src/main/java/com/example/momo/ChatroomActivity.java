@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ChatroomActivity extends AppCompatActivity {
 
-    Button chatroom_backtochatlist, chatroom_userInfoBtn;
+    Button chatroom_backtochatlist, chatroom_userInfoBtn, sendBtn;
     TextView chatroom_nickname;
     public static String chatroom_name="";
 
@@ -35,6 +35,8 @@ public class ChatroomActivity extends AppCompatActivity {
 //        else {
 //            namefromchatlist = intent.getExtras().getString("namefromchatlist");
 //        }
+
+        sendBtn = (Button)findViewById(R.id.sendBtn);
 
         chatroom_backtochatlist = (Button)findViewById(R.id.chatroom_backtochatlist);
         chatroom_userInfoBtn = (Button)findViewById(R.id.chatroom_userInfoBtn);

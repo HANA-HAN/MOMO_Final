@@ -119,6 +119,7 @@
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:layout_weight="4">
             </TextView>
             <LinearLayout
@@ -149,6 +150,7 @@
                 android:layout_marginLeft="20dp"
                 android:gravity="center"
                 android:text="나이키 브랜드에 관심이 많아요.\n스타일러를 알아보고 있어요."
+                android:textColor="@color/black"
                 android:fontFamily="@font/elicedigitalbaeumregular">
             </TextView>
         </LinearLayout>
@@ -164,6 +166,7 @@
                 android:text="채팅 요청"
                 android:fontFamily="@font/elicedigitalnaeumbold"
                 android:background="#59ffffff"
+                android:textColor="@color/black"
                 android:layout_margin="5dp">
             </Button>
         </LinearLayout>
