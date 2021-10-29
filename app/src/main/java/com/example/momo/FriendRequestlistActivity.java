@@ -116,6 +116,7 @@ public class FriendRequestlistActivity extends AppCompatActivity {
                         a.putExtra("Linear4_text", Linear4_text);
                         startActivity(a);
                         finish();
+                        break;
                 }
             }
         };

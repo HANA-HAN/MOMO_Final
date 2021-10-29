@@ -75,6 +75,7 @@
                 android:paddingBottom="13dp"
                 android:paddingRight="11dp">
                 <Button
+                    android:id="@+id/chatroom_userInfoBtn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/infoiconpng">

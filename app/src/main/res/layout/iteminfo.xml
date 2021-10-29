@@ -92,11 +92,12 @@
                     android:layout_weight="2"
                     android:src="@drawable/icon_fashion"/>
                 <TextView
+                    android:id="@+id/iteminfo_sellerName"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="8"
                     android:layout_marginLeft="10dp"
-                    android:text="나이키만세"
+                    android:text="나이키맨"
                     android:textSize="23dp"
                     android:gravity="left|center"
                     android:fontFamily="@font/elicedigitalbaeumregular"/>
@@ -169,6 +170,7 @@
             android:fontFamily="@font/elicedigitalbaeumregular"
             android:gravity="left|center"/>
         <Button
+            android:id="@+id/iteminfo_gotochatroom"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="5"

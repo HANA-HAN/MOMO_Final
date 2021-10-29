@@ -1,5 +1,7 @@
 package com.example.momo;
 
+import static com.example.momo.InterestActivity.myInterestname;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -24,13 +26,14 @@ public class ProfileActivity extends AppCompatActivity {
 //    private GoogleSignInAccount mGoogleSignInAccount;
 //    private GoogleSignInClient mGoogleSignInClient;
 
-
     ImageView selected_interest_image;
-    String cur_name = "";
     //닉네임과 소개글
     EditText et_name, et_introduce;
     //메인으로 가는 버튼
     Button nextBtn2main;
+
+    public static String myNickname = "";
+    public static String myIntroduce = "";
 
 
     @Override
@@ -53,12 +56,15 @@ public class ProfileActivity extends AppCompatActivity {
 //        mGoogleSignInAccount = getIntent().getParcelableExtra(GOOGLE_ACCOUNT);
 //        setDataOnView();
 
-        selected_interest_image = (ImageView)findViewById(R.id.selected_interest_image);
+
+        //전역변수인 사용자의닉네임과 소개글을 저장
         et_name = (EditText)findViewById(R.id.et_name);
         et_introduce = (EditText)findViewById(R.id.et_introduce);
-        Intent getfromInterest = getIntent();
-        cur_name = getfromInterest.getExtras().getString("interest_name");
-        switch (cur_name) {
+
+
+        //id연동 후 전역변수인 interestname의 값에 따라 이미지 매핑
+        selected_interest_image = (ImageView)findViewById(R.id.selected_interest_image);
+        switch (myInterestname) {
             case "사진/영상":
                 selected_interest_image.setImageResource(R.drawable.icon_camera);
                 break;
@@ -173,13 +179,12 @@ public class ProfileActivity extends AppCompatActivity {
         nextBtn2main.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nextBtn2main.setBackgroundColor(Color.rgb(79, 39, 96));
+                //버튼을 클릭했을때 해당 값들이 들어와야하기 때문에 onclick으로 달아줘야함
+                myNickname = et_name.getText().toString();
+                myIntroduce = et_introduce.getText().toString();
                 Intent i = new Intent(ProfileActivity.this, MainActivity.class);
-                i.putExtra("nickname", et_name.getText().toString());
-                i.putExtra("introduce", et_introduce.getText().toString());
-                i.putExtra("interest_name",cur_name);
                 startActivity(i);
-                finish();
+                //finish();
             }
         });
     }

@@ -15,8 +15,9 @@ public class InterestActivity extends AppCompatActivity {
     Button interest_img_1_1, interest_img_1_2, interest_img_1_3, interest_img_2_1, interest_img_2_2, interest_img_2_3;
     TextView interest_text_1_1, interest_text_1_2, interest_text_1_3, interest_text_2_1, interest_text_2_2, interest_text_2_3;
     Button interest_leftBtn,interest_1Btn,interest_2Btn,interest_3Btn, interest_rightBtn, nextBtn, additionBtn;
-    //int current_page_num = 1;
-    String cur_name = "";
+
+    //전역변수로 자신의 관심사 이름 설정
+    public static String myInterestname = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,22 +61,22 @@ public class InterestActivity extends AppCompatActivity {
                 switch (view.getId()){
                     //클릭한 이미지에 따라 이름 전달 -> 받는 인텐트에서 이름을 기준으로 사진 연동
                     case R.id.interest_img_1_1:
-                        cur_name = interest_text_1_1.getText().toString();
+                        myInterestname = interest_text_1_1.getText().toString();
                         break;
                     case R.id.interest_img_1_2:
-                        cur_name = interest_text_1_2.getText().toString();
+                        myInterestname = interest_text_1_2.getText().toString();
                         break;
                     case R.id.interest_img_1_3:
-                        cur_name = interest_text_1_3.getText().toString();
+                        myInterestname = interest_text_1_3.getText().toString();
                         break;
                     case R.id.interest_img_2_1:
-                        cur_name = interest_text_2_1.getText().toString();
+                        myInterestname = interest_text_2_1.getText().toString();
                         break;
                     case R.id.interest_img_2_2:
-                        cur_name = interest_text_2_2.getText().toString();
+                        myInterestname = interest_text_2_2.getText().toString();
                         break;
                     case R.id.interest_img_2_3:
-                        cur_name = interest_text_2_3.getText().toString();
+                        myInterestname = interest_text_2_3.getText().toString();
                         break;
 
                     //왼쪽버튼
@@ -266,7 +267,6 @@ public class InterestActivity extends AppCompatActivity {
                     case R.id.nextBtn :
                         //프로필설정으로 선택한 카테고리 이름 보내기
                         Intent a = new Intent(InterestActivity.this, ProfileActivity.class);
-                        a.putExtra("interest_name",cur_name);
                         startActivity(a);
                         break;
 

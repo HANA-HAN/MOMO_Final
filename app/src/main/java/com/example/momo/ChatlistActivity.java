@@ -1,5 +1,7 @@
 package com.example.momo;
 
+import static com.example.momo.ChatroomActivity.chatroom_name;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +16,10 @@ public class ChatlistActivity extends AppCompatActivity {
     Button randBtn, requestBtn, backtomain;
     LinearLayout chatlist0,chatlist1,chatlist2,chatlist3,chatlist4;
     TextView chatlist_Linear0_nickname, chatlist_Linear1_nickname, chatlist_Linear2_nickname, chatlist_Linear3_nickname, chatlist_Linear4_nickname, chatlist_Linear1_textL, chatlist_Linear2_textL, chatlist_Linear3_textL, chatlist_Linear4_textL;
-    String nickname_tochatroom="";
+
+    //상대의 이름 전역변수로 저장
+    public static String opposite_name = "";
+
     /* public String chatlist_Linear1_nickname="";
     public String chatlist_Linear2_nickname="";
     public String chatlist_Linear3_nickname="";
@@ -73,31 +78,27 @@ public class ChatlistActivity extends AppCompatActivity {
                     case R.id.randBtn:
                         Intent a = new Intent(ChatlistActivity.this, RandMatchingActivity.class);
                         startActivity(a);
-                        finish();
                         break;
                     case R.id.requestBtn:
                         Intent b = new Intent(ChatlistActivity.this, FriendRequestlistActivity.class);
                         startActivity(b);
-                        finish();
                         break;
                     case R.id.backtomain:
                         Intent c = new Intent(ChatlistActivity.this, MainActivity.class);
                         startActivity(c);
-                        finish();
                         break;
+                    //이 아래부터 각 리스트 누르면 전역변수인 상대방 이름(opposite_name)으로 설정
                     case R.id.chatlist0:
                         Intent d = new Intent(ChatlistActivity.this, ChatroomActivity.class);
-                        nickname_tochatroom = chatlist_Linear0_nickname.getText().toString();
-                        d.putExtra("namefromchatlist", nickname_tochatroom);
+                        opposite_name = chatlist_Linear0_nickname.getText().toString();
+                        chatroom_name = opposite_name;
                         startActivity(d);
-                        finish();
                         break;
                     case R.id.chatlist1:
                         Intent e = new Intent(ChatlistActivity.this, ChatroomActivity.class);
-                        nickname_tochatroom = chatlist_Linear1_nickname.getText().toString();
-                        e.putExtra("namefromchatlist", chatlist_Linear1_nickname.getText().toString());
+                        opposite_name = chatlist_Linear1_nickname.getText().toString();
+                        chatroom_name = opposite_name;
                         startActivity(e);
-                        finish();
                         break;
                     /*case R.id.chatlist2:
                         Intent f = new Intent(ChatlistActivity.this, ChatroomActivity.class);

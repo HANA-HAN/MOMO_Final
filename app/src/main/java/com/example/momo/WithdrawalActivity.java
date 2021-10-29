@@ -13,9 +13,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class WithdrawalActivity extends AppCompatActivity {
-    Button withdrawal_backtomain, withdrawal_withdrawalBtn;
-    RadioButton withdrawal_etcBtn;
-    EditText withdrawal_etcDetail;
+    Button withdrawal_cancel_button, withdrawal_withdrawalBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,17 +22,15 @@ public class WithdrawalActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        withdrawal_backtomain = (Button)findViewById(R.id.withdrawal_backtomain);
+        withdrawal_cancel_button = (Button)findViewById(R.id.withdrawal_cancel_button);
         withdrawal_withdrawalBtn = (Button)findViewById(R.id.withdrawal_withdrawalBtn);
-        withdrawal_etcBtn = (RadioButton)findViewById(R.id.withdrawal_etcBtn);
-        withdrawal_etcDetail = (EditText)findViewById(R.id.withdrawal_etcDetail);
 
         Button.OnClickListener onClickListener = new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
                     //클릭한 이미지에 따라 이름 전달 -> 받는 인텐트에서 이름을 기준으로 사진 연동
-                    case R.id.withdrawal_backtomain:
+                    case R.id.withdrawal_cancel_button:
                         Intent a = new Intent(WithdrawalActivity.this, MainActivity.class);
                         startActivity(a);
                         break;
@@ -49,7 +45,7 @@ public class WithdrawalActivity extends AppCompatActivity {
                 }
             }
         };
-        withdrawal_backtomain.setOnClickListener(onClickListener);
+        withdrawal_cancel_button.setOnClickListener(onClickListener);
         withdrawal_withdrawalBtn.setOnClickListener(onClickListener);
     }
 }

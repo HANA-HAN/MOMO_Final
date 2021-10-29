@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/startbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#4Dffffff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="150dp"
+        android:paddingBottom="40dp">
+
+        <!-- 메인 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#4Dffffff"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right|center">
+                <Button
+                    android:id="@+id/userinfo_cancleBtn"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:text="x"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/elicedigitalnaeumbold"
+                    android:background="@drawable/interest_nextbtn"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+                </Button>
+            </LinearLayout>
+
+            <!--관심사 이미지-->
+            <ImageView
+                android:id="@+id/userinfo_userInterestimg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4.5"
+                android:src="@drawable/icon_fashion"
+                android:paddingTop="10dp">
+            </ImageView>
+
+            <!--이름 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/userinfo_userNickname"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="20dp"
+                    android:layout_weight="1"
+                    android:text="나이키만세"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/elicedigitalnaeumbold"
+                    android:gravity="right|top"
+                    android:textColor="@color/white">
+                </TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="20dp"
+                    android:layout_weight="1"
+                    android:text=" 님"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/elicedigitalnaeumbold"
+                    android:gravity="left|top"
+                    android:textColor="@color/white">
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/userinfo_interest_line"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="패션"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:fontFamily="@font/elicedigitalnaeumbold"
+                android:background="@drawable/edge"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/userinfo_introduce_line"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="나이키 운동화에 관심이 있어요!"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:fontFamily="@font/elicedigitalbaeumregular"
+                android:background="@drawable/edge"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/userinfo_reportBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="사용자 신고하기"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:fontFamily="@font/elicedigitalnaeumbold"
+                android:background="@drawable/interest_nextbtn"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+            </Button>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
