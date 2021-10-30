@@ -2,6 +2,7 @@ package com.example.momo;
 
 import static com.example.momo.ChatlistActivity.opposite_name;
 import static com.example.momo.IteminfoActivity.sellerName;
+import static com.example.momo.ProfileActivity.myNickname;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -38,11 +39,11 @@ public class ChatroomActivity extends AppCompatActivity {
     private List<ChatData> chatList;
 
     // 중요!!!!!!! 사용자입장에서 일단 이 상태에서 실행한 다음 nick2로 바꾸고 에뮬레이터2번째꺼로 변경한 후 실행하면됨
-    private String nick = "nick1";
+    private String nick = myNickname;
 
     private EditText EditText_chat;
 
-    private DatabaseReference myRef;
+    public DatabaseReference myRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,6 +133,8 @@ public class ChatroomActivity extends AppCompatActivity {
                             chat.setMsg(msg);
                             myRef.push().setValue(chat);
                         }
+
+                        EditText_chat.setText(null);
                         break;
 
                     case R.id.chatroom_backtochatlist:

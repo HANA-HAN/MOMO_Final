@@ -123,16 +123,17 @@
                         android:layout_height="0dp"
                         android:layout_weight="4"
                         android:gravity="left|bottom"
-                        android:text="나이키만세"
+                        android:text="상대방 이름"
                         android:textColor="@color/black"
                         android:fontFamily="@font/elicedigitalnaeumbold">
                     </TextView>
                     <TextView
+                        android:id="@+id/chatlist_Linear0_lastchatlog"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="6"
                         android:paddingTop="5dp"
-                        android:text="나중에 시간되시면 같이 가욤~~"
+                        android:text="대화내용"
                         android:textColor="@color/black"
                         android:fontFamily="@font/elicedigitalbaeumregular">
                     </TextView>
@@ -140,7 +141,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:text="10:39AM"
+                    android:text="시간"
                     android:textColor="@color/black"
                     android:fontFamily="@font/elicedigitalnaeumbold"
                     android:layout_gravity="right"

@@ -69,12 +69,14 @@
             android:layout_weight="3"
             android:padding="10dp">
             <ImageView
+                android:id="@+id/uploadImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="5dp"
-                android:gravity="center"
-                android:src="@drawable/nike"/>
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_image"/>
         </LinearLayout>
 
         <!--실내용-->
@@ -171,6 +173,7 @@
 
         <!--글 올리기 버튼-->
         <Button
+            android:id="@+id/uploadItem"
             android:layout_gravity="right|top"
             android:layout_width="200dp"
             android:layout_height="0dp"

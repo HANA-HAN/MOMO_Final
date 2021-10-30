@@ -38,13 +38,13 @@ public class RandMatchingActivity extends AppCompatActivity {
                 switch (view.getId()) {
                     case R.id.rand_leftBtn:
                         rand_interest_image.setImageResource(R.drawable.icon_fashion);
-                        rand_nickname.setText("나이키만세");
-                        rand_introduce.setText("나이키 브랜드에 관심이 많아요.\n스타일러를 알아보고 있어요.");
+                        rand_nickname.setText("신발좋아");
+                        rand_introduce.setText("내 신발은 100만원짜리~");
                         break;
                     case R.id.rand_RightBtn:
                         rand_interest_image.setImageResource(R.drawable.icon_makeup);
-                        rand_nickname.setText("MakeM");
-                        rand_introduce.setText("메이크업 픽서에 관심있어요.");
+                        rand_nickname.setText("조던굿");
+                        rand_introduce.setText("조던만 신는다.");
                         break;
                     case R.id.rand_requestBtn:
                         Toast t = Toast.makeText(RandMatchingActivity.this, "채팅 요청을 보냈어요.", Toast.LENGTH_SHORT);

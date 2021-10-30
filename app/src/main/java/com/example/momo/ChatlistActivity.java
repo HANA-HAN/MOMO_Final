@@ -15,7 +15,7 @@ public class ChatlistActivity extends AppCompatActivity {
 
     Button randBtn, requestBtn, backtomain;
     LinearLayout chatlist0,chatlist1,chatlist2,chatlist3,chatlist4;
-    TextView chatlist_Linear0_nickname, chatlist_Linear1_nickname, chatlist_Linear2_nickname, chatlist_Linear3_nickname, chatlist_Linear4_nickname, chatlist_Linear1_textL, chatlist_Linear2_textL, chatlist_Linear3_textL, chatlist_Linear4_textL;
+    TextView chatlist_Linear0_nickname, chatlist_Linear0_lastchatlog, chatlist_Linear1_nickname, chatlist_Linear2_nickname, chatlist_Linear3_nickname, chatlist_Linear4_nickname, chatlist_Linear1_textL, chatlist_Linear2_textL, chatlist_Linear3_textL, chatlist_Linear4_textL;
 
     //상대의 이름 전역변수로 저장
     public static String opposite_name = "";
@@ -62,6 +62,9 @@ public class ChatlistActivity extends AppCompatActivity {
         chatlist4 = (LinearLayout)findViewById(R.id.chatlist4);
 
         chatlist_Linear0_nickname = (TextView)findViewById(R.id.chatlist_Linear0_nickname);
+        chatlist_Linear0_lastchatlog = (TextView)findViewById(R.id.chatlist_Linear0_lastchatlog);
+
+
         chatlist_Linear1_nickname = (TextView)findViewById(R.id.chatlist_Linear1_nickname);
         chatlist_Linear2_nickname = (TextView)findViewById(R.id.chatlist_Linear2_nickname);
         chatlist_Linear3_nickname = (TextView)findViewById(R.id.chatlist_Linear3_nickname);
