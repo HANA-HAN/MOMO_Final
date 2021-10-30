@@ -84,176 +84,19 @@
     </LinearLayout>
 
     <!-- 채팅로그 -->
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:orientation="horizontal"
-                android:paddingBottom="7dp">
-                <TextView
-                    android:layout_width="255dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edge"
-                    android:fontFamily="@font/elicedigitalbaeumregular"
-                    android:gravity="center"
-                    android:paddingLeft="30dp"
-                    android:paddingTop="15dp"
-                    android:paddingRight="30dp"
-                    android:paddingBottom="15dp"
-                    android:text="안녕하세요~"
-                    android:textColor="@color/black"
-                    android:textSize="17dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:gravity="right"
-                android:paddingBottom="7dp">
-                <TextView
-                    android:layout_width="255dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:text="네 안녕하세요~"
-                    android:textSize="17dp"
-                    android:fontFamily="@font/elicedigitalnaeumbold"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"
-                    android:background="@drawable/edge">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:paddingBottom="7dp">
-                <TextView
-                    android:layout_width="255dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:text="저 신발에 관심이 많은데, 혹시 어떤 브랜드 좋아하세요?"
-                    android:textSize="17dp"
-                    android:fontFamily="@font/elicedigitalbaeumregular"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"
-                    android:background="@drawable/edge">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:gravity="right"
-                android:paddingBottom="7dp">
-                <TextView
-                    android:layout_width="255dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:text="아 저는 나이키랑 컨버스 좋아해요ㅎㅎ"
-                    android:textSize="17dp"
-                    android:fontFamily="@font/elicedigitalnaeumbold"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"
-                    android:background="@drawable/edge">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:paddingBottom="7dp">
-                <TextView
-                    android:layout_width="255dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:text="헐~진짜요? 저두요!!"
-                    android:textSize="17dp"
-                    android:fontFamily="@font/elicedigitalbaeumregular"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"
-                    android:background="@drawable/edge">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:gravity="right"
-                android:paddingBottom="7dp">
-                <TextView
-                    android:layout_width="255dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:text="저 저번에 홍대 KREAM 매장 가서 나이키 조던 보고왔는데 너무 예쁘더라구요!"
-                    android:textSize="17dp"
-                    android:fontFamily="@font/elicedigitalnaeumbold"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"
-                    android:background="@drawable/edge">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:paddingBottom="7dp">
-                <TextView
-                    android:layout_width="255dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:text="나중에 시간되시면 같이 가욤~~"
-                    android:textSize="17dp"
-                    android:fontFamily="@font/elicedigitalbaeumregular"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"
-                    android:background="@drawable/edge">
-                </TextView>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:padding="10dp"/>
     <!--채팅-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:orientation="horizontal"
-        android:weightSum="10"
+        android:weightSum="1"
         android:paddingTop="7dp"
         android:paddingBottom="7dp"
         android:paddingLeft="20dp"
@@ -262,10 +105,11 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:paddingRight="10dp"
-            android:layout_weight="8.5"
             android:orientation="horizontal">
             <EditText
+                android:id="@+id/EditText_chat"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingLeft="17dp"
@@ -279,12 +123,11 @@
             </EditText>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="60dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
             android:paddingLeft="5dp">
             <Button
-                android:id="@+id/sendBtn"
+                android:id="@+id/Button_send"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/sendbtn">
