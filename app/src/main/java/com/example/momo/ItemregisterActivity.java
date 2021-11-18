@@ -1,5 +1,7 @@
 package com.example.momo;
 
+import static com.example.momo.UsedtradeActivity.itemregisterFlag;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -23,6 +25,8 @@ public class ItemregisterActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle("모두 모여라");
+
+        itemregisterFlag = "true";
 
         backtoitemlist = (Button)findViewById(R.id.backtoitemlist);
         backtoitemlist.setOnClickListener(new Button.OnClickListener() {

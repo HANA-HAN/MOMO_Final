@@ -114,7 +114,7 @@
                 android:id="@+id/rand_nickname"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:text="나이키만세"
+                android:text="나이키맨"
                 android:fontFamily="@font/elicedigitalnaeumbold"
                 android:textSize="25dp"
                 android:textStyle="bold"
@@ -149,7 +149,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:gravity="center"
-                android:text="나이키 브랜드에 관심이 많아요.\n스타일러를 알아보고 있어요."
+                android:text="나이키 브랜드에 관심이 많아요."
                 android:textColor="@color/black"
                 android:fontFamily="@font/elicedigitalbaeumregular">
             </TextView>

@@ -41,6 +41,9 @@
         <activity android:name=".UserinfoActivity" android:label="UserinfoActivity"/>
         <activity android:name=".ReportActivity" android:label="ReportActivity"/>
         <activity android:name=".ProfileActivity" android:label="ProfileActivity"/>
+        <activity android:name=".IteminfoActivity2" android:label="IteminfoActivity2"/>
+        <activity android:name=".IteminfoActivity3" android:label="IteminfoActivity3"/>
+
     </application>
 
 </manifest>

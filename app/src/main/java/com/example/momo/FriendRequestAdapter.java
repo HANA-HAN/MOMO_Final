@@ -59,7 +59,7 @@ public class FriendRequestAdapter extends RecyclerView.Adapter<FriendRequestAdap
         holder.btn_accept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                remove(holder.getAdapterPosition()); //삭제
+                remove(holder.getAdapterPosition()); //삭제
                 Toast.makeText(view.getContext(), "수락", Toast.LENGTH_SHORT).show();
                 return;
             }

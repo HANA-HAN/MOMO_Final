@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import static com.example.momo.ChatlistActivity.chatlist0Flag;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,6 +37,7 @@ public class ReportActivity extends AppCompatActivity {
                     case R.id.report_reportBtn:
                         Toast t = Toast.makeText(ReportActivity.this, "신고가 완료되었습니다.", Toast.LENGTH_SHORT);
                         t.show();
+                        chatlist0Flag = "False";
                         Intent b = new Intent(ReportActivity.this, ChatlistActivity.class);
                         startActivity(b);
                         break;

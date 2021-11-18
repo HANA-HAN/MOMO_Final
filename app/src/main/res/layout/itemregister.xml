@@ -76,7 +76,7 @@
                 android:padding="5dp"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_image"/>
+                app:srcCompat="@drawable/dior"/>
         </LinearLayout>
 
         <!--실내용-->

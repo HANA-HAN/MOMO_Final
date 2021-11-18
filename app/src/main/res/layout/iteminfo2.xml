@@ -23,7 +23,7 @@
             android:paddingTop="15dp"
             android:paddingBottom="15dp">
             <Button
-                android:id="@+id/backtoitemlist2"
+                android:id="@+id/backtoitemlist3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -73,7 +73,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="3.4"
                 android:gravity="center"
-                android:src="@drawable/nike"/>
+                android:src="@drawable/dior"/>
 
             <!-- 판매자이름-->
             <LinearLayout
@@ -97,7 +97,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="8"
                     android:layout_marginLeft="10dp"
-                    android:text="조던마니아"
+                    android:text="나이키맨"
                     android:textSize="23dp"
                     android:gravity="left|center"
                     android:fontFamily="@font/elicedigitalbaeumregular"/>
@@ -122,7 +122,7 @@
                     android:layout_marginBottom="7dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="조던 신발 팔아요."
+                    android:text="디올 캔버스 팔아요. 상태 굳."
                     android:fontFamily="@font/elicedigitalnaeumbold"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -130,7 +130,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="사이즈는 250인데 저한테 안맞아서 팝니다. 한번도 안신었고, 상태 좋습니다. 관심 있으신 분 편하게 연락 주세요!\n가격: 250,000원\n사이즈: 250mm"
+                    android:text="사이즈는 270입니다."
                     android:textSize="17dp"
                     android:fontFamily="@font/elicedigitalbaeumregular"
                     android:layout_marginTop="5dp"/>
@@ -157,8 +157,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2.5"
-            android:text="250,000"
-            android:textSize="20dp"
+            android:text="1,300,000"
+            android:textSize="18dp"
             android:fontFamily="@font/elicedigitalbaeumregular"
             android:gravity="right|center"/>
         <TextView
@@ -170,7 +170,7 @@
             android:fontFamily="@font/elicedigitalbaeumregular"
             android:gravity="left|center"/>
         <Button
-            android:id="@+id/iteminfo_gotochatroom"
+            android:id="@+id/iteminfo2_gotochatroom"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="5"

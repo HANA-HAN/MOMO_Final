@@ -3,6 +3,8 @@ package com.example.momo;
 import static com.example.momo.ChatlistActivity.opposite_name;
 import static com.example.momo.IteminfoActivity.sellerName;
 import static com.example.momo.ProfileActivity.myNickname;
+import static com.example.momo.ChatlistActivity.lastchatlogFlag1;
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -91,6 +93,7 @@ public class ChatroomActivity extends AppCompatActivity {
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 ChatData chat = dataSnapshot.getValue(ChatData.class);
                 ((ChatAdapter) mAdapter).addChat(chat);
+                lastchatlogFlag1 = "true";
             }
 
             @Override

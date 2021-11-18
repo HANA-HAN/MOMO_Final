@@ -10,6 +10,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import static com.example.momo.ChatlistActivity.chatlist0Flag;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -20,10 +22,10 @@ import java.util.List;
 
 public class FriendRequestlistActivity extends AppCompatActivity {
 
-    private ArrayList<FriendRequestData> arrayList;
-    private FriendRequestAdapter friendRequestAdapter;
-    private RecyclerView recyclerView;
-    private LinearLayoutManager linearLayoutManager;
+    public static ArrayList<FriendRequestData> arrayList;
+    public static FriendRequestAdapter friendRequestAdapter;
+    public static RecyclerView recyclerView;
+    public static LinearLayoutManager linearLayoutManager;
 
     Button backtochatlistBtn;
 
@@ -36,6 +38,7 @@ public class FriendRequestlistActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle("모두 모여라");
 
+
         recyclerView = (RecyclerView) findViewById(R.id.friendrequestlist_rv);
         linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
@@ -45,8 +48,8 @@ public class FriendRequestlistActivity extends AppCompatActivity {
         friendRequestAdapter = new FriendRequestAdapter(arrayList);
         recyclerView.setAdapter(friendRequestAdapter);
 
-//        FriendRequestData friendRequestData = new FriendRequestData(R.drawable.icon_fashion, "나이키맨", "나이키 브랜드에 관심이 많아요.\n스타일러를 알아보고 있어요.");
-//        arrayList.add(friendRequestData);
+        FriendRequestData friendRequestData = new FriendRequestData(R.drawable.icon_fashion, "신발좋아", "내 신발은 100만원 짜리~");
+        arrayList.add(friendRequestData);
 
         backtochatlistBtn = (Button) findViewById(R.id.backtochatlistBtn);
         Button.OnClickListener onClickListener = new Button.OnClickListener() {
@@ -54,6 +57,7 @@ public class FriendRequestlistActivity extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.backtochatlistBtn:
+                        chatlist0Flag = "true";
                         Intent a = new Intent(FriendRequestlistActivity.this, ChatlistActivity.class);
                         startActivity(a);
                         finish();
@@ -61,6 +65,7 @@ public class FriendRequestlistActivity extends AppCompatActivity {
                 }
             }
         };
+        backtochatlistBtn.setOnClickListener(onClickListener);
     }
 }
 //        accept_btn1 = (Button)findViewById(R.id.accept_btn1);

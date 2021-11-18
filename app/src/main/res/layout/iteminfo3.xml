@@ -23,7 +23,7 @@
             android:paddingTop="15dp"
             android:paddingBottom="15dp">
             <Button
-                android:id="@+id/backtoitemlist2"
+                android:id="@+id/backtoitemlist4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -73,11 +73,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="3.4"
                 android:gravity="center"
-                android:src="@drawable/nike"/>
+                android:src="@drawable/makeup"/>
 
             <!-- 판매자이름-->
             <LinearLayout
-                android:id="@+id/toiteminfo"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -90,14 +89,14 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:src="@drawable/icon_fashion"/>
+                    android:src="@drawable/icon_makeup"/>
                 <TextView
-                    android:id="@+id/iteminfo_sellerName"
+                    android:id="@+id/iteminfo3_sellerName"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="8"
                     android:layout_marginLeft="10dp"
-                    android:text="조던마니아"
+                    android:text="쿨톤굿"
                     android:textSize="23dp"
                     android:gravity="left|center"
                     android:fontFamily="@font/elicedigitalbaeumregular"/>
@@ -122,7 +121,7 @@
                     android:layout_marginBottom="7dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="조던 신발 팔아요."
+                    android:text="메이크업 박스"
                     android:fontFamily="@font/elicedigitalnaeumbold"
                     android:textSize="20dp"
                     android:textStyle="bold" />
@@ -130,7 +129,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="사이즈는 250인데 저한테 안맞아서 팝니다. 한번도 안신었고, 상태 좋습니다. 관심 있으신 분 편하게 연락 주세요!\n가격: 250,000원\n사이즈: 250mm"
+                    android:text="메이크업 박스 쓸일이 없어서 팝니다~~\n가격은 20,000원 생각하고 있어요."
                     android:textSize="17dp"
                     android:fontFamily="@font/elicedigitalbaeumregular"
                     android:layout_marginTop="5dp"/>
@@ -157,7 +156,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2.5"
-            android:text="250,000"
+            android:text="20,000"
             android:textSize="20dp"
             android:fontFamily="@font/elicedigitalbaeumregular"
             android:gravity="right|center"/>
@@ -170,7 +169,7 @@
             android:fontFamily="@font/elicedigitalbaeumregular"
             android:gravity="left|center"/>
         <Button
-            android:id="@+id/iteminfo_gotochatroom"
+            android:id="@+id/iteminfo3_gotochatroom"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="5"

@@ -14,8 +14,16 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ChatlistActivity extends AppCompatActivity {
 
     Button randBtn, requestBtn, backtomain;
-    LinearLayout chatlist0,chatlist1,chatlist2,chatlist3,chatlist4;
-    TextView chatlist_Linear0_nickname, chatlist_Linear0_lastchatlog, chatlist_Linear1_nickname, chatlist_Linear2_nickname, chatlist_Linear3_nickname, chatlist_Linear4_nickname, chatlist_Linear1_textL, chatlist_Linear2_textL, chatlist_Linear3_textL, chatlist_Linear4_textL;
+    LinearLayout chatlist0,chatlist1,chatlist2;
+    TextView chatlist_Linear0_nickname, chatlist_Linear0_textL, chatlist_Linear0_time, chatlist_Linear1_nickname, chatlist_Linear1_textL, chatlist_Linear1_time, chatlist_Linear2_nickname,chatlist_Linear2_textL,chatlist_Linear2_time;
+    View chatlist0_line,chatlist1_line,chatlist2_line,chatlist3_line;
+
+
+    public static String lastchatlogFlag1 = "false";
+    public static String lastchatlogFlag2 = "false";
+    public static String chatlist0Flag = "false";
+    public static String chatlist1Flag = "false";
+    public static String chatlist2Flag = "false";
 
     //상대의 이름 전역변수로 저장
     public static String opposite_name = "";
@@ -52,27 +60,73 @@ public class ChatlistActivity extends AppCompatActivity {
         Linear3_text = getfromRequest.getExtras().getString("Linear3_text");
         Linear4_text = getfromRequest.getExtras().getString("Linear4_text");*/
 
+        chatlist0_line = (View)findViewById(R.id.chatlist0_line);
+        chatlist1_line = (View)findViewById(R.id.chatlist1_line);
+        chatlist2_line = (View)findViewById(R.id.chatlist2_line);
+
         randBtn = (Button)findViewById(R.id.randBtn);
         requestBtn = (Button)findViewById(R.id.requestBtn);
         backtomain = (Button)findViewById(R.id.backtomain);
         chatlist0 = (LinearLayout)findViewById(R.id.chatlist0);
         chatlist1 = (LinearLayout)findViewById(R.id.chatlist1);
         chatlist2 = (LinearLayout)findViewById(R.id.chatlist2);
-        chatlist3 = (LinearLayout)findViewById(R.id.chatlist3);
-        chatlist4 = (LinearLayout)findViewById(R.id.chatlist4);
-
         chatlist_Linear0_nickname = (TextView)findViewById(R.id.chatlist_Linear0_nickname);
-        chatlist_Linear0_lastchatlog = (TextView)findViewById(R.id.chatlist_Linear0_lastchatlog);
-
-
+        chatlist_Linear0_textL = (TextView)findViewById(R.id.chatlist_Linear0_textL);
+        if (lastchatlogFlag1 == "true"){
+            chatlist_Linear0_textL.setText("네 안녕하세요.");
+        } else{
+            chatlist_Linear0_textL.setText("대화를 나눠보세요.");
+        }
+        chatlist_Linear0_time = (TextView)findViewById(R.id.chatlist_Linear0_time);
         chatlist_Linear1_nickname = (TextView)findViewById(R.id.chatlist_Linear1_nickname);
-        chatlist_Linear2_nickname = (TextView)findViewById(R.id.chatlist_Linear2_nickname);
-        chatlist_Linear3_nickname = (TextView)findViewById(R.id.chatlist_Linear3_nickname);
-        chatlist_Linear4_nickname = (TextView)findViewById(R.id.chatlist_Linear4_nickname);
         chatlist_Linear1_textL = (TextView)findViewById(R.id.chatlist_Linear1_textL);
+        chatlist_Linear1_time = (TextView)findViewById(R.id.chatlist_Linear1_time);
+        if(lastchatlogFlag1 == "true"){
+            chatlist_Linear1_textL.setText("안녕하세요 중고목록 보고 연락드려요.");
+        } else{
+            chatlist_Linear1_textL.setText("대화를 나눠보세요.");
+        }
+
+        if (chatlist0Flag == "true"){
+            chatlist0_line.setVisibility(chatlist0_line.VISIBLE);
+            chatlist0.setVisibility(chatlist0.VISIBLE);
+        }else{
+            chatlist0_line.setVisibility(chatlist0_line.GONE);
+            chatlist0.setVisibility(chatlist0.GONE);
+        }
+        if (chatlist1Flag == "true"){
+            chatlist1_line.setVisibility(chatlist1_line.VISIBLE);
+            chatlist1.setVisibility(chatlist1.VISIBLE);
+        }else{
+            chatlist1_line.setVisibility(chatlist1_line.GONE);
+            chatlist1.setVisibility(chatlist1.GONE);
+        }
+        chatlist_Linear2_nickname = (TextView)findViewById(R.id.chatlist_Linear2_nickname);
         chatlist_Linear2_textL = (TextView)findViewById(R.id.chatlist_Linear2_textL);
-        chatlist_Linear3_textL = (TextView)findViewById(R.id.chatlist_Linear3_textL);
-        chatlist_Linear4_textL = (TextView)findViewById(R.id.chatlist_Linear4_textL);
+        chatlist_Linear2_time = (TextView)findViewById(R.id.chatlist_Linear2_time);
+        if (chatlist2Flag == "true"){
+            chatlist2_line.setVisibility(chatlist2_line.VISIBLE);
+            chatlist2.setVisibility(chatlist2.VISIBLE);
+        }else{
+            chatlist2_line.setVisibility(chatlist2_line.GONE);
+            chatlist2.setVisibility(chatlist2.GONE);
+        }
+        if (lastchatlogFlag1 == "true"){
+            chatlist_Linear2_textL.setText("메이크업 박스 구매 원합니다!");
+        } else{
+            chatlist_Linear2_textL.setText("대화를 나눠보세요.");
+        }
+
+
+//        chatlist_Linear2_nickname = (TextView)findViewById(R.id.chatlist_Linear2_nickname);
+//        chatlist_Linear2_textL = (TextView)findViewById(R.id.chatlist_Linear2_textL);
+//        chatlist2 = (LinearLayout)findViewById(R.id.chatlist2);
+//        chatlist3 = (LinearLayout)findViewById(R.id.chatlist3);
+//        chatlist4 = (LinearLayout)findViewById(R.id.chatlist4);
+//        chatlist_Linear3_nickname = (TextView)findViewById(R.id.chatlist_Linear3_nickname);
+//        chatlist_Linear4_nickname = (TextView)findViewById(R.id.chatlist_Linear4_nickname);
+//        chatlist_Linear3_textL = (TextView)findViewById(R.id.chatlist_Linear3_textL);
+//        chatlist_Linear4_textL = (TextView)findViewById(R.id.chatlist_Linear4_textL);
 
         Button.OnClickListener onClickListener = new Button.OnClickListener() {
             @Override
@@ -93,7 +147,8 @@ public class ChatlistActivity extends AppCompatActivity {
                     //이 아래부터 각 리스트 누르면 전역변수인 상대방 이름(opposite_name)으로 설정
                     case R.id.chatlist0:
                         Intent d = new Intent(ChatlistActivity.this, ChatroomActivity.class);
-                        opposite_name = chatlist_Linear0_nickname.getText().toString();
+                        opposite_name = chatlist_Linear0_nickname.getText().toString(); //위 아래 번갈아가면서!!!!
+                        //opposite_name = "나이키맨"; //위와 번갈아 가면서!!!
                         chatroom_name = opposite_name;
                         startActivity(d);
                         break;
@@ -103,14 +158,14 @@ public class ChatlistActivity extends AppCompatActivity {
                         chatroom_name = opposite_name;
                         startActivity(e);
                         break;
-                    /*case R.id.chatlist2:
+                    case R.id.chatlist2:
                         Intent f = new Intent(ChatlistActivity.this, ChatroomActivity.class);
-                        //f.putExtra("Linear2_nickname", Linear2_nickname);
-                        //f.putExtra("Linear2_text", Linear2_text);
+                        opposite_name = chatlist_Linear2_nickname.getText().toString();
+                        chatroom_name = opposite_name;
                         startActivity(f);
                         finish();
                         break;
-                    case R.id.chatlist3:
+                    /*case R.id.chatlist3:
                         Intent g = new Intent(ChatlistActivity.this, ChatroomActivity.class);
                         //g.putExtra("Linear3_nickname", Linear3_nickname);
                         //g.putExtra("Linear3_text", Linear3_text);
@@ -133,8 +188,8 @@ public class ChatlistActivity extends AppCompatActivity {
         backtomain.setOnClickListener(onClickListener);
         chatlist0.setOnClickListener(onClickListener);
         chatlist1.setOnClickListener(onClickListener);
-        /*chatlist2.setOnClickListener(onClickListener);
-        chatlist3.setOnClickListener(onClickListener);
+        chatlist2.setOnClickListener(onClickListener);
+        /*chatlist3.setOnClickListener(onClickListener);
         chatlist4.setOnClickListener(onClickListener);*/
     }
 }

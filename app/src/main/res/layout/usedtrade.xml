@@ -81,10 +81,12 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp">
             <LinearLayout
+                android:id="@+id/toiteminfo_1"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:orientation="horizontal"
-                android:padding="7dp">
+                android:padding="7dp"
+                android:visibility="gone">
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -94,7 +96,6 @@
                     android:gravity="center"
                     android:src="@drawable/nike"/>
                 <LinearLayout
-                    android:id="@+id/toiteminfo"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="7"
@@ -134,16 +135,20 @@
                 </LinearLayout>
             </LinearLayout>
             <View
+                android:id="@+id/toiteminfo_1_line"
                 android:layout_width="match_parent"
                 android:layout_height="0.7dp"
-                android:background="#26000000">
+                android:background="#26000000"
+                android:visibility="gone">
             </View>
 
             <LinearLayout
+                android:id="@+id/toiteminfo_2"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:orientation="horizontal"
-                android:padding="7dp">
+                android:padding="7dp"
+                android:visibility="gone">
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -192,16 +197,20 @@
                 </LinearLayout>
             </LinearLayout>
             <View
+                android:id="@+id/toiteminfo_2_line"
                 android:layout_width="match_parent"
                 android:layout_height="0.7dp"
-                android:background="#26000000">
+                android:background="#26000000"
+                android:visibility="gone">
             </View>
 
             <LinearLayout
+                android:id="@+id/toiteminfo_3"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:orientation="horizontal"
-                android:padding="7dp">
+                android:padding="7dp"
+                android:visibility="gone">
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -250,125 +259,11 @@
                 </LinearLayout>
             </LinearLayout>
             <View
+                android:id="@+id/toiteminfo_3_line"
                 android:layout_width="match_parent"
                 android:layout_height="0.7dp"
-                android:background="#26000000">
-            </View>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:orientation="horizontal"
-                android:padding="7dp">
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:orientation="vertical"
-                    android:padding="5dp"
-                    android:gravity="center"
-                    android:src="@drawable/fixer"/>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="7"
-                    android:paddingLeft="10dp"
-                    android:orientation="vertical"
-                    android:weightSum="10">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:text="메이크업 픽서 필요하신분~"
-                        android:fontFamily="@font/elicedigitalnaeumbold"
-                        android:textSize="17dp"
-                        android:textStyle="bold"
-                        android:gravity="left|bottom"/>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="7"
-                        android:paddingTop="7dp"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/elicedigitalbaeumregular"
-                            android:text="32,000"
-                            android:textSize="15dp"
-                            android:gravity="left|top"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/elicedigitalbaeumregular"
-                            android:text=" 원"
-                            android:textSize="15dp"
-                            android:gravity="left|top"/>
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.7dp"
-                android:background="#26000000">
-            </View>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:orientation="horizontal"
-                android:padding="7dp">
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:orientation="vertical"
-                    android:padding="5dp"
-                    android:gravity="center"
-                    android:src="@drawable/nike"/>
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="7"
-                    android:paddingLeft="10dp"
-                    android:orientation="vertical"
-                    android:weightSum="10">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
-                        android:text="조던 신발 팔아요."
-                        android:fontFamily="@font/elicedigitalnaeumbold"
-                        android:textSize="17dp"
-                        android:textStyle="bold"
-                        android:gravity="left|bottom"/>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="7"
-                        android:paddingTop="7dp"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="250,000"
-                            android:fontFamily="@font/elicedigitalbaeumregular"
-                            android:textSize="15dp"
-                            android:gravity="left|top"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text=" 원"
-                            android:fontFamily="@font/elicedigitalbaeumregular"
-                            android:textSize="15dp"
-                            android:gravity="left|top"/>
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.7dp"
-                android:background="#26000000">
+                android:background="#26000000"
+                android:visibility="gone">
             </View>
 
         </LinearLayout>
